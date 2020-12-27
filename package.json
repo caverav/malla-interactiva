@@ -1,0 +1,34 @@
+{
+  "name": "malla-interactiva",
+  "version": "1.5.1",
+  "description": "Proyecto Universitario en donde se mantiene una plataforma web que facilita información sobre las mallas en la Universidad.",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "browsersync": "0.0.1-security",
+    "terser": "^5.5.1",
+    "uglifycss": "^0.0.29"
+  },
+  "scripts": {
+    "build": "./scripts/minify_code.sh",
+    "devBuild": "./scripts/minify_dev.sh",
+    "clean": "npm prune --production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CsarMan/malla-interactiva.git"
+  },
+  "keywords": [
+    "USM",
+    "UTFSM",
+    "malla",
+    "interactiva"
+  ],
+  "author": "César Paulangelo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CsarMan/malla-interactiva/issues"
+  },
+  "homepage": "https://github.com/CsarMan/malla-interactiva"
+}

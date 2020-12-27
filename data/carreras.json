@@ -1,0 +1,73 @@
+[
+  {
+    "Nombre": "Ambiental",
+    "Link": "ICA"
+  },
+  {
+    "Nombre": "Arquitectura",
+    "Link": "ARQ"
+  },
+  {
+    "Nombre": "Civil",
+    "Link": "CIV"
+  },
+  { "Nombre": "Civil en Minas",
+    "Link": "ICM"
+  },
+  {
+    "Nombre": "Comercial",
+    "Link": "ICOM"
+  },
+  {
+    "Nombre": "Construcción",
+    "Link": "CONSTRU"
+  },
+  {
+    "Nombre": "Diseño de productos",
+    "Link": "IDP"
+  },
+  {
+    "Nombre": "Eléctrica",
+    "Link": "ELI"
+  },
+  {
+    "Nombre": "Electrónica",
+    "Link": "ELO"
+  },
+  {
+    "Nombre": "Lic. Física",
+    "Link": "FIS"
+  },
+  {
+    "Nombre": "Informática",
+    "Link": "INF"
+  },
+  {
+    "Nombre": "Ing. Aviación Comercial",
+    "Link": "IAC"
+  },
+  {
+    "Nombre": "Industrial",
+    "Link": "ICI"
+  },
+  {
+    "Nombre": "Matemática",
+    "Link": "MAT"
+  },
+  {
+    "Nombre": "Mecánica",
+    "Link": "MEC"
+  },
+  {
+    "Nombre": "Metalúrgica",
+    "Link": "MET"
+  },
+  {
+    "Nombre": "Química",
+    "Link": "ICQ"
+  },
+  {
+    "Nombre": "Telemática",
+    "Link": "TEL"
+  }
+]
