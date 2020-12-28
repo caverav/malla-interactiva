@@ -1,11 +1,23 @@
 # Changelog
 Changelog del proyecto. No es la gran cosa pero *podría* ser útil a futuro
 
+# [1.5.1]
+
+- Ahora prioridad/index.html usa nuevamente los archivos minificados.
+- Se arregló un problema que impedía acceder a las instrucciones de la generadora
+- Se arregló un problema donde al eliminar la categoría, no se reasignaban los ramos a otra categoría
+- Se creó el script devBuild que permite el probar cambios a archivos javascript durante el desarrollo
+- Ahora el script build usa devBuild de manera interna
+- Los archivos min# han sido eliminados
+- Se removió el sitio de donaciones debido a que este daba una impresión equivocada. Ha sido remplazado
+  por un indicador de la fecha de la última actualización
+- Detalles de contacto agregadas
+
 # [1.5.0]
 
 - Ahora la malla podrá ser mostrada en mallas.labcomp.cl
 - Se actualizaron varias mallas
-- Se actualizó el readme  
+- Se actualizó el readme
 
 # [1.4.2]
 
