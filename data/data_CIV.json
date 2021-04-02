@@ -53,26 +53,26 @@
 		["Dinámica de Estructuras","CIV-235",4,0,"ES",["CIV-234"],"P"],
 		["Hidrología","CIV-243",3,0,"AG",["CIV-242","MAT-044"],"P"],
 		["Mecánica de Suelos I","CIV-261",4,0,"SU",["CIV-242","CIV-133"],"P"],
-		["Ingeniería en Transporte","CIV-368",3,0,"VI",["ILI-281"],"P"],
+		["Ingeniería en Transporte","CIV-386",3,0,"VI",["ILI-281"],"P"],
 		["Planificación y control de Proyectos","CIV-380",3,0,"GE",["CIV-222","ICS-733"],"P"]
 	],
 	"s9": [
 		["Hormigón Armado","CIV-331",5,0,"ES",["CIV-234","CIV-251"],"I"],
 		["Hidráulica Aplicada","CIV-346",3,0,"AG",["CIV-243"],"I"],
 		["Mecánica de Suelos II","CIV-366",4,0,"SU",["CIV-261"],"I"],
-		["Diseño Geométrico y Capacidad Vial","CIV-370",3,0,"VI",["CIV-368"],"I"],
+		["Diseño Geométrico y Capacidad Vial","CIV-370",3,0,"VI",["CIV-386"],"I"],
 		["Gest. de la Calidad Total en la Cadena de Suministros","CIV-381",3,0,"GE",["CIV-380"],"I"]
 	],
 	"s10": [
 		["Diseño en Acero","CIV-336",4,0,"ES",["CIV-234"],"P"],
 		["Máquinas y Sistemas Hidráulicos","CIV-347",3,0,"AG",["CIV-346"],"P"],
 		["Ingeniería Sanitaria","CIV-377",3,0,"AG",["CIV-242"],"P"],
-		["Diseño Estructural en Pavimentos","CIV-371",3,0,"VI",["CIV-370"],"P"],
+		["Diseño Estructural en Pavimentos","CIV-371",3,0,"VI",["CIV-366"],"P"],
 		["Optativo de Especialidad I","CIVOE-1",4,0,"OP",[],"A"]
 	],
 	"s11": [
 		["Ingeniería Sísmica","CIV-338",3,0,"ES",["CIV-235","CIV-336"],"I"],
-		["Ingeniería del Medio Ambiente","CIV-378",3,0,"AG",["CIV-377"],"I"],
+		["Ingeniería del Medio Ambiente","CIV-378",3,0,"AG",["CIV-377", "CIV-381"],"I"],
 		["Evaluación de Proyectos","CIV-390",3,0,"GE",["CIV-381"],"A"],
 		["Taller de Titulación I","CIV-397",4,0,"OP",[],"A"],
 		["Optativo de Especialidad II","CIVOE-2",4,0,"OP",[],"A"]
