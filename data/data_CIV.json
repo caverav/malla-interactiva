@@ -31,7 +31,7 @@
 	"s5": [
 		["Mecánica Racional","CIV-202",4,0,"FI",["MAT-024","CIV-131"],""],
 		["Análisis Numérico","MAT-270",4,0,"FT",["MAT-024"],"A"],
-		["Tecnología de Materiales","CIV-251",4,0,"FI",["CIV-133","QUI-010"],"I"],
+		["Tecnología de Materiales","CIV-251",4,0,"FI",["CIV-131","QUI-010"],"I"],
 		["Geología","CIV-205",3,0,"FI",["CIV-206"],"I"],
 		["Humanístico IV","HXW-004",2,0,"HUM",[],"A"]
 	],
@@ -43,7 +43,7 @@
 		["Humanístico V","HXW-005",2,0,"HUM",[],"A"]
 	],
 	"s7": [
-		["Análisis Estructural","CIV-234",3,0,"ES",["CIV-233"],"I"],
+		["Análisis Estructural","CIV-234",3,0,"ES",["CIV-233", "MAT-270"],"I"],
 		["Hidráulica Teórica","CIV-242",4,0,"AG",["CIV-244"],"I"],
 		["Optativo de Formación Transversal","OFT-1",3,0,"FT",["FIS-120","FIS-130"],"A"],
 		["Fundamento de Investigación de Operaciones","ILI-281",3,0,"FT",["MAT-044"],"A"],
@@ -60,7 +60,7 @@
 		["Hormigón Armado","CIV-331",5,0,"ES",["CIV-234","CIV-251"],"I"],
 		["Hidráulica Aplicada","CIV-346",3,0,"AG",["CIV-243"],"I"],
 		["Mecánica de Suelos II","CIV-366",4,0,"SU",["CIV-261"],"I"],
-		["Diseño Geométrico y Capacidad Vial","CIV-370",3,0,"VI",["CIV-368","CIV-261"],"I"],
+		["Diseño Geométrico y Capacidad Vial","CIV-370",3,0,"VI",["CIV-368"],"I"],
 		["Gest. de la Calidad Total en la Cadena de Suministros","CIV-381",3,0,"GE",["CIV-380"],"I"]
 	],
 	"s10": [
