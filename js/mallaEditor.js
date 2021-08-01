@@ -50,7 +50,7 @@ class MallaEditor {
             e.target.querySelector("#custom-sigla").value = ""
             e.target.querySelector("#custom-credits-USM").value = ""
             e.target.querySelector("#custom-credits-SCT").value = ""
-            e.target.querySelector("#custom-credits-SCT").placeholder = 2
+            e.target.querySelector("#custom-credits-SCT").placeholder = "Ingrese un valor"
         })
 
         this.createAdvancedSubjectModal = null
@@ -80,7 +80,7 @@ class MallaEditor {
                 sigla.removeAttribute("disabled")
                 e.target.querySelector("#custom-creditsa-USM").value = ""
                 e.target.querySelector("#custom-creditsa-SCT").value = ""
-                e.target.querySelector("#custom-creditsa-SCT").placeholder = 2
+                e.target.querySelector("#custom-creditsa-SCT").placeholder = "Ingrese un valor"
                 e.target.querySelector("#dictatesIn").value = ""
                 let sectorC = e.target.querySelector("#sectorChooser")
                 sectorC.textContent = ""
@@ -376,8 +376,18 @@ class MallaEditor {
         let modal = this.createAdvancedSubjectModal.get(0)
         let name = modal.querySelector("#custom-namea").value
         let sigla = modal.querySelector("#custom-siglaa").value
-        let creditsUSM = parseInt(modal.querySelector("#custom-creditsa-USM").value)
-        let creditsSCT = parseInt(modal.querySelector("#custom-creditsa-SCT").value)
+        let creditsUSM = modal.querySelector("#custom-creditsa-USM").value
+        let creditsSCT = modal.querySelector("#custom-creditsa-SCT").value
+        if (isNaN(parseInt(creditsUSM))) {
+            creditsUSM = 1
+        } else
+            creditsSCT = parseInt(creditsUSM)
+        if (isNaN(parseInt(creditsSCT)))
+            creditsSCT = 2
+        else
+            creditsSCT = parseInt(creditsSCT)
+
+        console.log(creditsSCT, creditsUSM, modal.querySelector("#custom-creditsa-USM").value)
         let sectorName = modal.querySelector('#sectorChooser').value;
         let dictatesIn = modal.querySelector('#dictatesIn').value;
         let prer = []
