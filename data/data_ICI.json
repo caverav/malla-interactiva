@@ -24,7 +24,7 @@
 		["Matemáticas IV","MAT-024",4,6,"PC",["MAT-023"],"A"],
 		["Física General III","FIS-130",4,8,"PC",["MAT-022","FIS-110"],"A"],
 		["Taller de Ingeniería Industrial II","ILN-011",3,0,"IND",["ILN-010"],""],
-		["Electrotecnia Básica","ELI-271",3,0,"ELEC",["MAT-023","FIS-120"],""],
+		["Electrotecnia Básica","ELI-271",3,7,"ELEC",["MAT-023","FIS-120"],""],
 		["Humanístico II","HXW-002",2,0,"HUM",[],""],
 		["Inglés I","HCW-100",2,0,"HUM",[],""]
 	],

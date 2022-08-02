@@ -13,7 +13,8 @@
     "devBuild": "./scripts/minify_dev.sh",
     "gbpages": "./scripts/minify_GBPages.sh",
     "clean": "npm prune --production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cleanDev": "./scripts/clean.sh"
   },
   "repository": {
     "type": "git",
@@ -28,7 +29,7 @@
   "author": "César Paulangelo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CsarMan/malla-interactiva/issues"
+    "url": "https://github.com/BooterMan98/malla-interactiva/issues"
   },
-  "homepage": "https://github.com/CsarMan/malla-interactiva"
+  "homepage": "https://github.com/BooterMan98/malla-interactiva"
 }

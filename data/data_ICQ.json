@@ -1,7 +1,7 @@
 {
     "s1": [
         ["Matemáticas I","MAT021",5,8,"MAT",[],"A"],
-        ["Introducción a la Física","FIS100",3,0,"FIS",[],""],
+        ["Introducción a la Física","FIS100",3,6,"FIS",[],""],
         ["Química y Sociedad","QUI010",3,0,"QUI",[],""],
         ["Introducción a la Ingeniería","IWG101",2,0,"PC",[],""],
         ["Educación Física I","EFI100",1,0,"HUM",[],""]

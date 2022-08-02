@@ -1,4 +1,4 @@
-FROM node:15.4.0-buster-slim
+FROM node:lts-buster-slim
 
 
 ARG USER_UID="1001"

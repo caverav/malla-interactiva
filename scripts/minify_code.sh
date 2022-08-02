@@ -23,3 +23,5 @@ gzip js/*
 # Create file representing last update date
 date +"%s000" | tee date.txt
 
+# moves assets to root
+cp ./assets/* ./
