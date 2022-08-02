@@ -17,6 +17,7 @@ class Malla {
         this.totalSubjects = 0;
         this.semesterManager = null
         this.currentMalla = null;
+        this.generatedCode = []
 
         // Propiedades despues del render
         this.APPROVED = [];
@@ -30,6 +31,10 @@ class Malla {
 
         this.totalCredits = 0;
         this.totalSubjects = 0;
+
+        if (document.getElementById("loadfile")) {
+            document.getElementById("loadfile").addEventListener("click", this.loadFile.bind(this))
+        }
 
     }
 
@@ -51,13 +56,26 @@ class Malla {
     // Obtiene los datos de la carrera y retorna una promesa para cuando los datos se hayan conseguido y
     // las propiedades estén listas
     setCareer(carr, fullCareerName, relaPath) {
-        this.currentMalla = carr;
-        this.fullCareerName = fullCareerName
-        let promises = [];
+        if (localStorage["sharedMalla"] != undefined) {
+            let unparsedData = localStorage["sharedMalla"]
+            localStorage.removeItem("sharedMalla")
+            let data = JSON.parse(unparsedData)
+            this.currentMalla = data.name;
+            this.fullCareerName = data.name
+            console.log("hola")
+            console.log(data.name)
+            return Promise.resolve(this.setMallaAndCategories(data.malla, data.categories))
 
-        promises.push(d3.json( relaPath + "data/data_" + this.currentMalla + ".json"));
-        promises.push(d3.json( relaPath + "data/colors_" + this.currentMalla + ".json"));
-        return Promise.all(promises).then(values => {this.setMallaAndCategories(values[0], values[1])})
+        } else {
+            this.currentMalla = carr;
+            this.fullCareerName = fullCareerName
+            let promises = [];
+    
+            promises.push(d3.json( relaPath + "data/data_" + this.currentMalla + ".json"));
+            promises.push(d3.json( relaPath + "data/colors_" + this.currentMalla + ".json"));
+            return Promise.all(promises).then(values => {this.setMallaAndCategories(values[0], values[1])})
+
+        }
     }
 
     // Define los datos de la malla y propiedades
@@ -576,6 +594,9 @@ class Malla {
             c += "\n" + "    " + color
         })
         c += "\n}"
+        this.generatedCode = [this.currentMalla,s,c]
+
+        let shareCode = `{\n "name": "${this.generatedCode[0]}",\n "malla": ${this.generatedCode[1]},\n "categories": ${this.generatedCode[2]}\n}`
         // Si existe el lugar para mostrarlo, se muestra
         if (document.getElementById('mallaCode')) {
             new ClipboardJS('.btn');
@@ -591,16 +612,22 @@ class Malla {
 
             let file1 = new Blob([s], {"aplication/json": "aplication/json"});
             let file2 = new Blob([c], {"aplication/json": "aplication/json"});
+            let file3 = new Blob([shareCode], {"aplication/json": "aplication/json"});
             let downloadLink1 = document.getElementById('dMalla')
             let downloadLink2 = document.getElementById('dColor')
+            let downloadLink3 = document.getElementById('dShare')
             downloadLink1.setAttribute('href', URL.createObjectURL(file1))
             downloadLink1.setAttribute('download', "data_" + this.currentMalla + '.json')
             downloadLink2.setAttribute("href", URL.createObjectURL(file2))
             downloadLink2.setAttribute("download", "colors_" + this.currentMalla + '.json')
+            downloadLink3.setAttribute('href', URL.createObjectURL(file3))
+            downloadLink3.setAttribute('download', this.currentMalla + '.json')
+
         } else {
             // Si no, se imprime en la consola
             console.log(s)
             console.log(c)
+
         }
         if (document.getElementById("abrev")) {
             document.getElementById("abrev").addEventListener('input', function (input) {
@@ -610,10 +637,40 @@ class Malla {
                 document.getElementById("carrColor2").textContent = input.target.value.toUpperCase()
                 document.getElementById('dMalla').setAttribute('download', "data_" + input.target.value.toUpperCase() + '.json')
                 document.getElementById('dColor').setAttribute("download", "colors_" + input.target.value.toUpperCase() + '.json')
+                console.log(this.generatedCode[0])
+                this.generatedCode[0] = input.target.value
 
                 $('[data-toggle="tooltip"]').tooltip()
                 $('[data-toggle="tooltip"]').tooltip('disable')
-            })
+
+
+                let downloadLink3 = document.getElementById('dShare')
+                let shareCode = `{\n "name": "${this.generatedCode[0]}",\n "malla": ${this.generatedCode[1]},\n "categories": ${this.generatedCode[2]}\n}`
+                let file3 = new Blob([shareCode], {"aplication/json": "aplication/json"});
+
+                downloadLink3.setAttribute('href', URL.createObjectURL(file3))
+                downloadLink3.setAttribute('download', this.generatedCode[0] + '.json')
+            }.bind(this))
         }
+    }
+
+    loadFile(e) {
+        let input = document.createElement('input');
+        input.type = 'file';
+        input.accept = '.json'
+        input.multiple = false
+        var reader = new FileReader();
+        reader.addEventListener("load", function (e) {
+            localStorage["sharedMalla"] = e.target.result;
+            location.reload()
+        });
+    
+        input.onchange = _this => {
+            let files =   Array.from(input.files);
+                reader.readAsText(files[0]);
+    
+              };
+        input.click();
+    
     }
 }

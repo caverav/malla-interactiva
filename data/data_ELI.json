@@ -22,7 +22,7 @@
 		["Inglés I","HCW100",2,0,"HUM",[],""]
 	],
 	"s4": [
-		["Introducción a la electrotécnia","ELI110",4,0,"ELI",["MAT022","FIS120"],"A"],
+		["Introducción a la electrotécnia","ELI110",4,0,"ELI",["MAT022","FIS110"],"A"],
 		["Matemáticas IV","MAT024",4,6,"MAT",["MAT023"],"A"],
 		["Física General III","FIS130",4,8,"FI",["MAT022","FIS110"],"A"],
 		["Mecánica General","IWM151",4,0,"MEC",["FIS110"],"A"],
@@ -38,7 +38,7 @@
 		["Inglés II","HCW101",2,0,"HUM",["HCW100"],""]
 	],
 	"s6": [
-		["Redes Eléctricas II","ELI212",4,0,"ELI",["ELI211"],"A"],
+		["Redes Eléctricas II","ELI212",4,0,"ELI",["ELI110", "MAT023"],"A"],
 		["Electrónica General I","ELI216",4,0,"ELI",["MAT024","ELI211"],"P"],
 		["Campos Electromagnéticos","ELI215",4,0,"ELI",["FIS120","ELI211"],"P"],
 		["Metrología Eléctrica","ELI214",4,0,"ELI",["FIS120","ELI211"],"A"],

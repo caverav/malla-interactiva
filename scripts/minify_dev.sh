@@ -12,3 +12,5 @@ echo ./js/min4.js
 
 
 
+# moves assets to root
+cp ./assets/* ./

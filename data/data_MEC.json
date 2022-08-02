@@ -18,7 +18,7 @@
         ["Matemáticas III","MAT023",4,6,"CB",["MAT022"],"A"],
         ["Física General II","FIS120",4,6,"CB",["MAT022","FIS110"],"A"],
         ["Estática","MEC151",3,5,"CDI",["MAT022","FIS110"],"A"],
-        ["Materiales Para Ingeniería","MET203",3,5,"CDI",["QUI010"],"A"],
+        ["Materiales Para Ingeniería","MET203",3,5,"CDI",["FIS110","QUI010"],"A"],
         ["Gráfica de Sistemas Mecánicos","MEC142",4,5,"IA",["MEC141"],"A"],
         ["Inglés II","HCW101",2,3,"FG",["HCW100"],""]
     ],
@@ -31,24 +31,24 @@
     ],
     "s5": [
         ["Análisis Numérico","MAT270",4,5,"CB",["MAT024"],"A"],
-        ["Mecánica de Materiales","MEC255",4,6,"CDI",["MEC151","MET203"],"A"],
+        ["Mecánica de Materiales","MEC255",4,7,"CDI",["MEC151","MET203"],"A"],
         ["Termodinámica","MEC110",4,6,"CDI",["MAT023","FIS110"],"A"],
         ["Ingles IV","HCW200",2,3,"FG",["HCW102"],""],
         ["Visión Trascendental del QueHacer Humano","HRW101",2,3,"FG",[],"A"]
     ],
     "s6": [
-        ["Estadística y Probabilidad Aplicada", "MAT045", 3, 5, "CB", [], "A"],
-        ["Mecánica de Fluidos","MEC120",4,6,"CDI",["MAT024","MEC110"],"A"],
+        ["Probabilidad y Estadística para Ingeniería", "MAT035", 4, 7, "CB", [], "A"],
+        ["Mecánica de Fluidos","MEC120",4,7,"CDI",["MAT024","MEC110"],"A"],
         ["Procesos de Manufactura","MEC161",3,5,"IA",["MEC160"],"I"],
         ["Elementos de Máquinas","MEC258",3,5,"IA",["MEC255"],"A"],
         ["Visión Inmanente del QueHacer Humano","HRW102",2,3,"FG",[],"A"]
     ],
     "s7": [
         ["Mecánica de Fluidos Avanzadas","MEC220",3,5,"CDI",["MEC120"],"A"],
-        ["Mecánica de Máquinas","MEC353",3,6,"CDI",["MAT270","MEC252"],"I"],
+        ["Mecánica de Máquinas","MEC353",3,5,"CDI",["MAT270","MEC252"],"I"],
         ["Transferencia de Calor","MEC230",4,6,"CDI",["MEC120"],"A"],
         ["Fundamentos del Diseño","MEC245",3,5,"CDI",["MEC161"],"A"],
-        ["Termodinámica Aplicada","MEC210",4,5,"IA",["MEC110"],"I"],
+        ["Termodinámica Aplicada","MEC210",4,7,"IA",["MEC110"],"I"],
         ["Visión Estética del QueHacer Humano","HRW103",2,3,"FG",[],"A"]
     ],
     "s8": [
@@ -56,13 +56,13 @@
         ["Mediciones Mecánicas","MEC260",3,5,"IA",["MEC160"],"A"],
         ["Fundamentos de Electrotecnia","ELI270",4,5,"IA",["MAT022","FIS120"],"A"],
         ["Diseño mecánico","MEC388",3,5,"IA",["MEC258","MEC161"],"I"],
-        ["Fundamentos de Economía y Financiamiento","ICS761",3,5,"GA",["MAT045"],"P"],
+        ["Fundamentos de Economía y Financiamiento","ICS761",3,5,"GA",["MAT035"],"P"],
         ["Electivo 1","MEC1",3,5,"EFP",[],""]
     ],
     "s9": [
         ["Equipo y Máquinas Térmicas","MEC378",4,5,"IA",["MEC278"],"I"],
         ["Métodos Numéricos en Ingeniería Mecánica","MEC270",3,5,"IA",["MAT270","MEC255","MEC120"],"I"],
-        ["Fundamentos de Calidad","MEC280",3,5,"IA",["MAT045"],"I"],
+        ["Fundamentos de Calidad","MEC280",3,5,"IA",["MAT035"],"I"],
         ["Fundamentos de Electronica","ILD208",3,5,"IA",["FIS120"],"A"],
 	    ["Fundamentos de Administración y Legislación","ICS762",3,5,"GA",["ICS761"],"I"],
         ["Electivo 2","MEC2",3,5,"EFP",[],""]

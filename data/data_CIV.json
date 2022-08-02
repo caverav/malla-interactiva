@@ -17,7 +17,7 @@
 		["Matemáticas III","MAT-023",4,7,"PC",["MAT-022"],"A"],
 		["Física General II","FIS-120",4,8,"PC",["MAT-022","FIS-110"],"A"],
 		["Estática De Estructuras","CIV-131",4,0,"ES",["MAT-022","FIS-110"],""],
-		["Dibujo En Ingeniería Civil","CIV-103",3,0,"FI",["IWI-131"],"I"],
+		["Dibujo En Ingeniería Civil","CIV-103",3,0,"FI",["MAT-021", "IWG-101"],"I"],
 		["Humanístico II","HXW-002",2,0,"HUM",[],"A"],
 		["Deportes","DEW-0",1,0,"HUM",["DEW-101"],"A"]
 	],
@@ -60,7 +60,7 @@
 		["Hormigón Armado","CIV-331",5,0,"ES",["CIV-234","CIV-251"],"I"],
 		["Hidráulica Aplicada","CIV-346",3,0,"AG",["CIV-243"],"I"],
 		["Mecánica de Suelos II","CIV-366",4,0,"SU",["CIV-261"],"I"],
-		["Diseño Geométrico y Capacidad Vial","CIV-370",3,0,"VI",["CIV-386","CIV-261"],"I"],
+		["Diseño Geométrico y Capacidad Vial","CIV-370",3,0,"VI",["CIV-386"],"I"],
 		["Gest. de la Calidad Total en la Cadena de Suministros","CIV-381",3,0,"GE",["CIV-380"],"I"]
 	],
 	"s10": [
