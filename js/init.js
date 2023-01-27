@@ -68,9 +68,9 @@ let params = new URLSearchParams(window.location.search)
 let carr =  params.get('m')
 if (!carr)
     carr = 'INF'
-let sct = false
-if (params.get('SCT') === "true")
-    sct = true
+let sct = true
+if (params.get('SCT') === "false")
+    sct = false
 
 // document.addEventListener("DOMContentLoaded", loadViews)
 //
@@ -263,7 +263,7 @@ function removePopUp() {
 
 function changeCreditsSystem() {
     let key = 'SCT'
-    let value = 'true'
+    let value = 'false'
     const params = new URLSearchParams(window.location.search);
     if (params.has(key)) {
         value = !('true' === params.get(key))
