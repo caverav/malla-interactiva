@@ -67,11 +67,11 @@
 		["Humanístico I","HRW-10x",2,3,"HUM",[],""]
 	],
 	"s10": [
-		["Trabajo de Titulación I","MIN-397",3,5,"MIN",["MIN-344","MIN-280"],""],
-		["Legislación Minera y Laboral","MIN-384",2,3,"MIN",["IWN-270","IWN-261"],""],
+		["Trabajo de Titulación I","MIN-397",3,5,"MIN",["MIN-344","MIN-280","MIN-332"],""],
+		["Legislación Minera y Laboral","MIN-384",2,3,"MIN",["IWN-270","IWN-261","MIN-233"],""],
 		["Negocio Minero Sustentable","MIN-374",3,5,"MIN",["MIN-332","MIN-280"],""],
-		["Seguridad Industrial y Ventilación","MIN-370",3,5,"MIN",["MIN-344"],""],
-		["Taller de Gestión de Proyectos","MIN-394",5,7,"MIN",["MIN-280","MIN-344"],""],
+		["Seguridad Industrial y Ventilación","MIN-370",3,5,"MIN",["MIN-314","MIN-265"],""],
+		["Taller de Gestión de Proyectos","MIN-394",5,7,"MIN",["MIN-270","MIN-334"],""],
 		["Humanístico II","HRW-10y",2,3,"HUM",[],""]
 	],
 	"s11": [
