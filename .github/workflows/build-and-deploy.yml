@@ -2,7 +2,16 @@ name: Build and deploy
 
 on:
   push:
-    branches: release
+    tags: 'v[0-9]+.[0-9]+.[0-9]+'
+
+  workflow_dispatch:
+
+
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 
 jobs:
   Build-and-push-container:
@@ -10,10 +19,11 @@ jobs:
     steps:
       -
         name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
-          ref: release
-      -
+          ref: ${{ github.ref }}
+          fetch-tags: true
+      - 
         name: Set up QEMU
         uses: docker/setup-qemu-action@v1
       -
@@ -32,24 +42,40 @@ jobs:
         with:
           push: true
           tags: booterman/malla-interactiva
+          
   Build-and-deploy-gbpages:
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+      
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-      - uses: fregante/setup-git-user@v1
-      - uses: actions/setup-node@v2
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-tags: true
+          ref: ${{ github.ref }}
+      - uses: actions/setup-node@v4
       # Runs a single command using the runners shell
       - name: Install and Build
         run: |
           npm install
           npm run gbpages
-      - name: Deploy to pages
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: . # The folder the action should deploy.
+          path: "."
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

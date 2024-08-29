@@ -6,12 +6,14 @@ labels: mallas
 assignees: ''
 
 ---
+> Por favor borrar todo texto antecedido por ">"
 
-**Nombre carrera*
-escribir carreras
+
+**Nombre carrera**
+> escribir carrera
 
 **Abreviatura de la carrera**
-por ejemplo, INF (Informática)
+> por ejemplo, INF (Informática)
 
 **Información de la malla**
-Insertar links o imagenes que muestren información de la nueva malla
+> Insertar links o imagenes que muestren información de la nueva malla

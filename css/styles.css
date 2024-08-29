@@ -86,6 +86,11 @@ header {
     fill: white;
 }
 
+
+#forward svg ,  #back  svg {
+    user-select: none;
+}
+
 .sem {
     transition: 0.3s;
 }

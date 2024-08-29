@@ -1,6 +1,28 @@
 # Changelog
 Changelog del proyecto. No es la gran cosa pero *podría* ser útil a futuro
 
+# [1.6.3]
+- Se actualizó la malla de Ingeniería Civil Informática
+- Ahora la pagina se actualiza con cada nuevo tag release en vez de cambiar una branch
+
+# [1.6.2]
+- Iconos restaurados de manera temporal (Despues de x visitas mensuales volveran a desaparecer...)
+- Agregada Malla de Ingeniería en Biotecnología 
+- Se reorganizaron las carreras en orden alfabetico
+
+# [1.6.1]
+> Esta *versión* recopila cambios que no fueron anotados previamente acá
+
+- Ahora se muestran los créditos SCT por defecto
+- Se movieron varios assets a la `/assets`para mejorar presentación del repo
+- Se actualizó la malla de Inegiería Civil en Minas
+- Ahora al entrar a la malla desde la url principal, se accede automaticamente a la última malla visitada (contribución de [@uwo-o](https://github.com/uwo-o))
+- Se actualizó la malla de Licenciatura en Física
+- Se actualizó la malla de Licenciatura en Quimica
+- Se actualizó el indicator de Google Analytics
+- se actuaizaron varios links hacias el repo del proyecto
+- Se actualizó la malla de Ingeniería Civil Eléctrica.
+
 # [1.6.0]
 - Ahora se pueden compartir mallas generadas localmente. Basta con descargar un archivo y enviarlo a tus compañeros para que lo carguen en la malla
 - Se agrega la malla de Ingeniería en Informática

@@ -1,89 +1,93 @@
 {
 	"s1": [
-		["Química y Sociedad","QUI010",3,0,"ROS",[],""],
-		["Matemáticas I","MAT021",5,8,"MAT",[],"A"],
+		["Programación","IWI131",3,0,"ROS",[],"A"],
+		["Álgebra y Geometría","MAT060",5,5,"MAT",[],"A"],
+		["Introducción al Cálculo","MAT070",5,5,"MAT",[],"A"],
 		["Introducción a la Física","FIS100",3,6,"FI",[],"A"],
 		["Introducción a la Ingeniería","IWG101",2,0,"FI",[],""],
-		["Educación Física I","DEW100",1,0,"HUM",[],""]	
+		["Educación Física I","DEW100",1,0,"HUM",[],""],
+		["Humanístico I","HW1",2,3,"HUM",[],""]
 	],
 	"s2": [
-		["Programación","IWI131",3,0,"ROS",[],""],
-		["Matemáticas II","MAT022",5,7,"MAT",["MAT021"],"A"],
-		["Física General I","FIS110",5,8,"FI",["MAT021","FIS100"],"A"],
-		["Visión Trascendente","HRW1",2,0,"HUM",[],""],
-		["Educación Física II","DEW101",1,0,"HUM",["DEW100"],""]
+		["Química y Sociedad","QUI010",3,0,"ROS",[],""],
+		["Algebra Lineal","MAT061",5,5,"MAT",["MAT060"],"A"],
+		["Cálculo en Una Variable","MAT071",5,6,"MAT",["MAT070"],"A"],
+		["Física General I","FIS110",5,8,"FI",["FIS100","MAT060", "MAT070"],"A"],
+		["Educación Física II","DEW101",1,0,"HUM",["DEW100"],""],
+		["Humanístico II","HW2",2,3,"HUM",[],"A"]
 	],
 	"s3": [
-		["Visión Inmanente","HWR102",2,0,"HUM",[],""],
-		["Matemáticas III","MAT023",4,7,"MAT",["MAT022"],"A"],
-		["Física General II","FIS120",4,8,"FI",["MAT022","FIS110"],"A"],
-		["Materiales para la ingeniería","IWC203",3,0,"MEC",["FIS110","QUI010"],"A"],
-		["Deportes","DEW0",1,0,"HUM",["DEW101"],""],
-		["Inglés I","HCW100",2,0,"HUM",[],""]
+		["Matemáticas III","MAT023",4,7,"MAT",["MAT061","MAT071"],"A"],
+		["Física General II","FIS120",4,8,"FI",["FIS110","MAT061","MAT071"],"A"],
+		["Materiales para la ingeniería","IWC203",3,5,"MEC",["FIS110","QUI010"],"A"],
+		["Deportes","DEW0",1,2,"HUM",["DEW101"],""],
+		["Humanístico III","HW3",2,3,"HUM",[],""],
+		["Inglés I","HCW100",3,2,"HUM",[],"A"]
 	],
 	"s4": [
-		["Introducción a la electrotécnia","ELI110",4,0,"ELI",["MAT022","FIS110"],"A"],
+		["Introducción a la electrotécnia","ELI110",4,7,"ELI",["FIS110","MAT061","MAT071"],"A"],
 		["Matemáticas IV","MAT024",4,6,"MAT",["MAT023"],"A"],
-		["Física General III","FIS130",4,8,"FI",["MAT022","FIS110"],"A"],
-		["Mecánica General","IWM151",4,0,"MEC",["FIS110"],"A"],
-		["Visión Estética","HWR103",2,0,"HUM",[],"A"],
-		["Crecimiento y Desarrollo","HWR104",2,0,"HUM",[],"A"]
+		["Física General III","FIS130",5,8,"FI",["FIS110"],"A"],
+		["Mecánica General","IWM151",4,5,"MEC",["FIS110"],"A"],
+		["Crecimiento y Desarrollo","HWR104",2,3,"HUM",[],"A"]
 	],
 	"s5": [
-		["Redes Eléctricas I","ELI211",4,0,"ELI",["ELI110"],"A"],
-		["Análisis Numérico","MAT270",4,0,"MAT",["MAT024"],"A"],
-		["Estadística","MAT031",3,0,"MAT",["MAT023"],"A"],
-		["Resistencia de Materiales Generales","IWM255",4,0,"MEC",["IWM151"],"A"],
-		["Formación y Liderazgo Empresarial","HWR131",2,0,"HUM",[],"A"],
-		["Inglés II","HCW101",2,0,"HUM",["HCW100"],""]
+		["Redes Eléctricas I","ELI211",4,7,"ELI",["ELI110"],"A"],
+		["Análisis Numérico","MAT270",4,7,"MAT",["MAT024"],"A"],
+		["Estadística","MAT031",3,5,"MAT",["MAT023"],"A"],
+		["Resistencia de Materiales Generales","IWM255",4,7,"MEC",["IWM151"],"A"],
+		["Formación y Liderazgo Empresarial","HWR131",2,2,"HUM",[],"A"],
+		["Inglés II","HCW101",2,3,"HUM",["HCW100"],"A"]
 	],
 	"s6": [
-		["Redes Eléctricas II","ELI212",4,0,"ELI",["ELI110", "MAT023"],"A"],
-		["Electrónica General I","ELI216",4,0,"ELI",["MAT024","ELI211"],"P"],
-		["Campos Electromagnéticos","ELI215",4,0,"ELI",["FIS120","ELI211"],"P"],
-		["Metrología Eléctrica","ELI214",4,0,"ELI",["FIS120","ELI211"],"A"],
-		["Humanístico VI","HW6",2,0,"HUM",[],""]
+		["Redes Eléctricas II","ELI212",4,7,"ELI",["ELI110", "MAT023"],"A"],
+		["Electrónica General I","ELI216",4,7,"ELI",["MAT024","ELI211"],"P"],
+		["Campos Electromagnéticos","ELI215",4,7,"ELI",["FIS120","ELI110","MAT024"],"A"],
+		["Metrología Eléctrica","ELI214",4,7,"ELI",["FIS120","ELI211"],"A"],
+		["Humanístico VI","HW6",2,3,"HUM",[],"A"]
 	],
 	"s7": [
-		["Conversión Electromecánica de Energía","ELI220",4,0,"ELI",["ELI212"],""],
-		["Electrónica General II","ELI217",4,0,"ELI",["ELI216"],"I"],
-		["Control Automático I","ELO270",3,0,"ELO",["ELI212"],"I"],
-		["Termodinámica General y Laboratorio","IWM210",4,0,"MEC",["FIS130","MAT023"],"A"],
-		["Humanístico VII","HW7",2,0,"HUM",[],""]
+		["Conversión Electromecánica de Energía","ELI220",4,7,"ELI",["ELI211","ELI215"],"I"],
+		["Electrónica General II","ELI217",4,7,"ELI",["ELI216"],"I"],
+		["Control Automático I","ELO270",3,5,"ELO",["ELI212"],"A"],
+		["Termodinámica General y Laboratorio","IWM210",4,7,"MEC",["FIS110"],"A"],
+		["Humanístico VII","HW7",2,3,"HUM",[],"A"],
+		["Práctica Industrial","PRI",0,0,"PRAC",["ELI214","ELI212","ELI215","ELI216"],"A"]
 	],
 	"s8": [
-		["Lab. Conversión Electromecánica de Energía","ELI221",3,0,"ELI",["ELI214","ELI212"],"P"],
-		["Análisis de Sistemas Eléctricos de Potencia I","ELI246",4,0,"ELI",["ELI220"],"A"],
-		["Física General IV","FIS140",4,8,"FI",["FIS130","FIS120"],"A"],
-		["Mecánica de Fluidos General","IWM220",4,0,"MEC",["MAT024","IWM210"],""],
-		["Economía I","ILN270",3,0,"IND",["MAT023"],""]
+		["Lab. Conversión Electromecánica de Energía","ELI221",3,5,"ELI",["ELI214","ELI220"],""],
+		["Análisis de Sistemas Eléctricos de Potencia I","ELI246",4,7,"ELI",["ELI211","FIS120"],""],
+		["Física General IV","FIS140",5,8,"FI",["FIS130","FIS120"],"A"],
+		["Mecánica de Fluidos General","IWM220",4,7,"MEC",["IWM210"],"A"],
+		["Economía I","ILN270",3,5,"IND",["MAT023"],"A"]
 	],
 	"s9": [
-		["Técnicas de Alta Tensión I","ELI360",3,0,"ELI",["ELI212","ELI246"],"I"],
-		["Análisis de Sistemas Eléctricos de Potencia II","ELI347",4,0,"ELI",["ELI246"],"A"],
-		["Electrónica de Potencia","ELI319",4,0,"ELI",["ELI216"],"I"],
-		["Máquinas Eléctricas I","ELI326",4,0,"ELI",["ELI220"],"A"],
-		["Economía II","ILN271",3,0,"IND",["ILN270"],""]
+		["Técnicas de Alta Tensión I","ELI360",3,5,"ELI",["ELI212","ELI246"],""],
+		["Análisis de Sistemas Eléctricos de Potencia II","ELI347",4,7,"ELI",["ELI246","ELI220"],"I"],
+		["Electrónica de Potencia","ELI319",4,7,"ELI",["ELI216"],"I"],
+		["Máquinas Eléctricas I","ELI326",4,7,"ELI",["ELI220","ELI212"],"I"],
+		["Economía II","ILN271",3,5,"IND",["ILN270"],"A"]
 	],
 	"s10": [
-		["Laboratorio de Maquinas Eléctricas","ELI327",4,0,"ELI",["ELI326"],"P"],
-		["Análisis de Sistemas Eléctricos de Potencia III","ELI348",4,0,"ELI",["ELI347"],"A"],
-		["Accionamientos Eléctricos","ELI328",4,0,"ELI",["ELO270","ELI326","ELI319"],"P"],
-		["Laboratorio de Alta Tensión","ELI361",3,0,"ELI",["ELI360"],"P"],
-		["Información y Control Financiero","IWN270",3,0,"IND",["ILN270"],""]
+		["Laboratorio de Maquinas Eléctricas","ELI327",4,7,"ELI",["ELI221","ELI326"],"P"],
+		["Análisis de Sistemas Eléctricos de Potencia III","ELI348",4,7,"ELI",["ELI246","MAT270","ELO270","PRI","ELI326"],"P"],
+		["Accionamientos Eléctricos","ELI328",4,7,"ELI",["ELO270","ELI326","ELI319"],""],
+		["Laboratorio de Alta Tensión","ELI361",3,5,"ELI",["ELI360"],""],
+		["Información y Control Financiero","IWN270",3,5,"IND",["ILN270"],"A"]
 	],
 	"s11": [
-		["Seminario de Titulación","ELI376",2,0,"ELI",[],"I"],
-		["Operación de Sistemas Eléctricos de Potencia","ELI349",3,0,"ELI",["ELI347"],"A"],
-		["Lab. Accionamientos Eléctricos","ELI329",3,0,"ELI",["ELI328"],"I"],
-		["Evaluación de Proyectos","ICN366",3,0,"IND",["IWN270"],""],
-		["Administración General","IWN261",3,0,"IND",[],""],
-		["Fundamentos de Investigación y Operaciones","INF281",3,0,"ELO",["MAT031"],""]
+		["Seminario de Titulación","ELI376",2,3,"ELI",["ELI327","ELI348","ELI328","ELI361","FIS140","ILN271","IWM220","MAT031","IWN270","ELI217","ELI347"],""],
+		["Operación de Sistemas Eléctricos de Potencia","ELI349",3,5,"ELI",["ELI348"],"I"],
+		["Lab. Accionamientos Eléctricos","ELI329",3,5,"ELI",["ELI328"],""],
+		["Evaluación de Proyectos","ICN336",3,5,"IND",["IWN270"],""],
+		["Administración General","IWN261",3,5,"IND",[],""],
+		["Fundamentos de Investigación y Operaciones","INF281",3,5,"ELO",["MAT061", "MAT071", "IWI131"],"A"],
+		["Práctica Profesional","PRP",0,0,"PRAC",["PRI","ELI360","ELI347","ELI319","ELI326","ILN271"],"A"]
 	],
 	"s12": [
-		["Planificación Eléctrica","ELI350",3,0,"ELI",["ICN366","ELI349"],"P"],
-		["Memoria de Titulación","ELI390",8,0,"ELI",["ELI376"],""],
-		["Proyectos Eléctricos","ELI378",4,0,"ELI",["ICN366","ELI349"],"P"],
-		["Recursos Humanos","ICN323",3,0,"IND",["IWN261"],""]
+		["Planificación Eléctrica","ELI350",3,5,"ELI",["ELI349"],"A"],
+		["Memoria de Titulación","ELI390",8,13,"ELI",["ELI376","ICN336","ELI349","PRP"],"A"],
+		["Proyectos Eléctricos","ELI378",4,7,"ELI",["ICN336","ELI349"],""],
+		["Recursos Humanos","ICN323",3,5,"IND",["IWN261"],"A"]
 	]
 }

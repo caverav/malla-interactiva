@@ -65,9 +65,24 @@ if (texts !== "Malla" || contact) {
 
 let params = new URLSearchParams(window.location.search)
 
-let carr =  params.get('m')
+let carr = localStorage.getItem("currentCarreer")
+
+if (params.get('m')) {
+    carr = params.get('m')
+    localStorage.setItem("currentCarreer", carr)
+}
+
+// update the url for feedback
+if (carr) {
+    let url = new URL(window.location.href)
+    url.searchParams.set('m', carr)
+    window.history.pushState({}, '', url);
+}
+
+
 if (!carr)
     carr = 'INF'
+
 let sct = true
 if (params.get('SCT') === "false")
     sct = false

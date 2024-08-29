@@ -7,6 +7,6 @@
 	"IND": ["#6BA8D1", "Industrias"],
 	"IS": ["#FDDE15", "Ingeniería de Software"],
 	"TIC": ["#6D57A5", "Infraestructura TIC"],
-	 "AN": ["#00AD5D", "Análisis Numérico"],
-	 "ELEC": ["#F78E1E", "Electivos Informática"]
+	"AN": ["#00AD5D", "Análisis Numérico"],
+	"ELEC": ["#F78E1E", "Electivos Informática"]
 }
